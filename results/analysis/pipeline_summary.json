@@ -1,0 +1,162 @@
+{
+  "pipeline_run_date": "2025-12-06T05:20:23.687495",
+  "step1_npm_packages": {
+    "total_packages": 3685898
+  },
+  "step2_extraction": {
+    "total_extractions": 101093,
+    "real_packages": 92218,
+    "hallucinated_packages": 8875,
+    "by_model": {
+      "codellama7b": {
+        "total": 12524,
+        "real": 11434,
+        "hallucinated": 1090,
+        "hallucination_rate": 8.70328968380709,
+        "unique_total": 3077,
+        "unique_real": 2269,
+        "unique_hallucinated": 808,
+        "unique_hallucination_rate": 26.259343516412088,
+        "rows_with_packages": 8456,
+        "rows_with_hallucinations": 852,
+        "prompt_hallucination_rate": 10.075685903500473
+      },
+      "gemma": {
+        "total": 10369,
+        "real": 9589,
+        "hallucinated": 780,
+        "hallucination_rate": 7.522422605844343,
+        "unique_total": 2091,
+        "unique_real": 1549,
+        "unique_hallucinated": 542,
+        "unique_hallucination_rate": 25.920612147297945,
+        "rows_with_packages": 6927,
+        "rows_with_hallucinations": 661,
+        "prompt_hallucination_rate": 9.542370434531543
+      },
+      "gpt_oss": {
+        "total": 10875,
+        "real": 10612,
+        "hallucinated": 263,
+        "hallucination_rate": 2.418390804597701,
+        "unique_total": 1978,
+        "unique_real": 1783,
+        "unique_hallucinated": 195,
+        "unique_hallucination_rate": 9.858442871587462,
+        "rows_with_packages": 6230,
+        "rows_with_hallucinations": 218,
+        "prompt_hallucination_rate": 3.4991974317817016
+      },
+      "marin": {
+        "total": 11853,
+        "real": 10350,
+        "hallucinated": 1503,
+        "hallucination_rate": 12.680334092634777,
+        "unique_total": 2638,
+        "unique_real": 1630,
+        "unique_hallucinated": 1008,
+        "unique_hallucination_rate": 38.210765731614856,
+        "rows_with_packages": 7775,
+        "rows_with_hallucinations": 1129,
+        "prompt_hallucination_rate": 14.52090032154341
+      },
+      "mistral": {
+        "total": 41354,
+        "real": 36878,
+        "hallucinated": 4476,
+        "hallucination_rate": 10.823620447840595,
+        "unique_total": 7821,
+        "unique_real": 4438,
+        "unique_hallucinated": 3383,
+        "unique_hallucination_rate": 43.255338192047056,
+        "rows_with_packages": 20072,
+        "rows_with_hallucinations": 3518,
+        "prompt_hallucination_rate": 17.526903148664807
+      },
+      "qwen": {
+        "total": 14118,
+        "real": 13355,
+        "hallucinated": 763,
+        "hallucination_rate": 5.40444822212778,
+        "unique_total": 2572,
+        "unique_real": 2035,
+        "unique_hallucinated": 537,
+        "unique_hallucination_rate": 20.87869362363919,
+        "rows_with_packages": 8630,
+        "rows_with_hallucinations": 660,
+        "prompt_hallucination_rate": 7.6477404403244496
+      }
+    }
+  },
+  "step3_detailed_analysis": {
+    "total_unique_hallucinations": 5713,
+    "version_specifiers": 0,
+    "real_packages": 0,
+    "true_hallucinations": 5713
+  },
+  "step4_registry_check": {
+    "total_checked": 5713,
+    "not_found": 5583,
+    "unpublished": 100,
+    "active": 30,
+    "available_for_registration": 5683
+  },
+  "step5_validation": {
+    "total_validated": 5683,
+    "valid_and_available": 4083,
+    "scoped_available": 1377,
+    "valid_but_taken": 100,
+    "invalid_names": 123,
+    "check_failed": 0,
+    "by_model": {
+      "codellama7b": {
+        "total_validated": 1090,
+        "valid_and_available": 775,
+        "scoped_available": 254,
+        "valid_but_taken": 43,
+        "invalid_names": 14,
+        "check_failed": 0
+      },
+      "gemma": {
+        "total_validated": 780,
+        "valid_and_available": 469,
+        "scoped_available": 272,
+        "valid_but_taken": 16,
+        "invalid_names": 20,
+        "check_failed": 0
+      },
+      "gpt_oss": {
+        "total_validated": 263,
+        "valid_and_available": 158,
+        "scoped_available": 83,
+        "valid_but_taken": 6,
+        "invalid_names": 7,
+        "check_failed": 0
+      },
+      "marin": {
+        "total_validated": 1503,
+        "valid_and_available": 978,
+        "scoped_available": 430,
+        "valid_but_taken": 42,
+        "invalid_names": 48,
+        "check_failed": 0
+      },
+      "mistral": {
+        "total_validated": 4476,
+        "valid_and_available": 3250,
+        "scoped_available": 1062,
+        "valid_but_taken": 75,
+        "invalid_names": 59,
+        "check_failed": 0
+      },
+      "qwen": {
+        "total_validated": 763,
+        "valid_and_available": 493,
+        "scoped_available": 219,
+        "valid_but_taken": 16,
+        "invalid_names": 27,
+        "check_failed": 0
+      }
+    }
+  }
+}
