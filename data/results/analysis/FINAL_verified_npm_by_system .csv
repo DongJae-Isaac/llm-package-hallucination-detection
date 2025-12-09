@@ -1,7 +1,0 @@
-﻿keyword,line_numbers,strategy,classification,exists
-chalk,"[4, 8]",strat_comma,NPM Package,True
-colors,"[4, 8]",strat_comma,NPM Package,True
-commander.js,[8],strat_comma,Unknown/Invalid,False
-hljs,[4],strat_comma,NPM Package,True
-nan,"[3, 7, 11]",strat_comma,NPM Package,True
-react-hot-toast,[4],strat_comma,NPM Package,True
