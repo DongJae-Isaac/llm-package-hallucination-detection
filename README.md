@@ -232,42 +232,46 @@ python src/llm_test/together_ai_test_m.py
 
 ```plaintxt
 llm-package-hallucination-detection/
+├── .git/
+├── .gitignore
+├── final_push.js
+├── README.md
+│
 ├── data/
-│   ├── docs/                    # 문서
+│   ├── docs/                           # 프로젝트 문서
 │   │   ├── experiment_results.md
 │   │   └── project_timeline.md
-│   ├── prompts/                 # 논문 기반 프롬프트 CSV
-│   │   ├── paper-prompts.csv
-│   └── reference/               # npm 패키지 목록
-│       └── npm_package_names.csv
+│   ├── prompts/                        # 논문 기반 프롬프트 CSV
+│   │   └── paper_prompts.zip
+│   └── reference/                      # npm 패키지 목록
+│       ├── 1
+│       └── npm_package_names.zip
 │
 ├── results/
-│   ├── analysis/                  # 최종 통합 분석 결과 CSV/그래프
-│   ├── self_refinement/           # Self-Refinement 결과 CSV
-│   └── rag/                       # RAG 결과 CSV
+│   ├── analysis/                       # 최종 통합 분석 결과 (CSV/그래프/통계)
+│   ├── self_refinement/                # Self-Refinement 결과 CSV
+│   └── rag/                            # RAG 결과 CSV
 │
 ├── src/
-│   ├── pipeline/
-│   │   └── full_pipeline.py       # Slopsquatting 통합 분석 파이프라인
-│   │
-│   ├── llm/
-│   │   ├── self_refinement/
-│   │   │   ├── together_ai_self_refinement.py        
-│   │   │   └── ollama_codellama_self_refinement.py
-│   │   └── rag/
+│   ├── llm_request/
+│   │   ├── init/                       # 초기 LLM 요청 스크립트
+│   │   │   ├── ollama_codellama_init.py
+│   │   │   └── together_ai_init.py
+│   │   ├── self_refinement/            # Self-Refinement 방식 LLM 요청
+│   │   │   ├── ollama_codellama_self_refinement.py
+│   │   │   └── together_ai_self_refinement.py
+│   │   └── rag/                        # RAG 방식 LLM 요청
 │   │       ├── ollama_codellama_rag.py
 │   │       └── together_ai_rag.py
 │   │
-│   └── analysis/
-│       ├── self-refinement_analyze.py
-│       └── rag_analyze.py
+│   └── analysis/                       # 결과 분석 스크립트
+│       ├── rag_analyze.py
+│       └── self_refinement_analyze.py
 │
-├── reference_code/                # 논문 오리지널 구현 및 비교용 스크립트
-│   ├── generate_package_names.py
-│   ├── package_detection.py
-│   └── run_test.py
-│
-└── README.md
+└── reference_code/                     # 논문 오리지널 구현 및 비교용 스크립트
+    ├── generate_package_names.py
+    ├── package_detection.py
+    └── run_test.py
 ```
 
 ## 🧬 연구 방법론 요약
