@@ -244,7 +244,6 @@ llm-package-hallucination-detection/
 │   ├── prompts/                        # 논문 기반 프롬프트 CSV
 │   │   └── paper_prompts.zip
 │   └── reference/                      # npm 패키지 목록
-│       ├── 1
 │       └── npm_package_names.zip
 │
 ├── results/
