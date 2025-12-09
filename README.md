@@ -234,6 +234,9 @@ import pkg from '<package-name>'
    - 초기 실험 결과 환각 감소 효과 확인
    - 추가 연구 진행 중
 
+## 프로젝트 시나리오  
+- [환경변수 유출 RDD 공격] https://github.com/JunYeopAn/llm-package-hallucination-attack-scenario.git
+
 ## 라이선스
 
 이 프로젝트는 학술 연구 목적으로 제작되었습니다.

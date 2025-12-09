@@ -16,7 +16,7 @@ BASE_URL    = "https://api.together.xyz/v1/chat/completions"
 TIMEOUT     = 120
 SAVE_INTERVAL = 10
 
-API_KEY = "3bfe9b22e1c049cc3ac0956b4e873d087e2c652be5ba56aa205ee8db6ec1e871"
+API_KEY = ""
 
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
